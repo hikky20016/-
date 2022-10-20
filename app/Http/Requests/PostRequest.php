@@ -6,6 +6,7 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class PostRequest extends FormRequest
 {
+
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -21,6 +22,7 @@ class PostRequest extends FormRequest
      *
      * @return array<string, mixed>
      */
+
     public function rules()
     {
         return [
@@ -28,5 +30,6 @@ class PostRequest extends FormRequest
             'post.body' => 'required|string|max:4000',
         ];
     }
+
     
 }

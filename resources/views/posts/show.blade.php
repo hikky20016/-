@@ -14,6 +14,7 @@
         <div class="content">
             <div class="content__post">
                 <h3>本文</h3>
+
                 <p>{{ $post->body }}</p>
             </div>
         </div>
@@ -22,6 +23,7 @@
         </div>
         <div class="footer">
             <a href="/posts/">戻る</a>
+
         </div>
     </body>
 </html>

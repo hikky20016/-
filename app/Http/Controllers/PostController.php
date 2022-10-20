@@ -22,6 +22,7 @@ public function show(Post $post)
 public function create()
 {
     return view('posts/create');
+
 }
 
  public function store(Post $post, PostRequest $request) // 引数をRequestからPostRequestにする
@@ -43,6 +44,7 @@ public function update(PostRequest $request, Post $post)
 
     return redirect('/posts/' . $post->id);
 }
+
 
 }
 
